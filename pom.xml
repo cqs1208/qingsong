@@ -12,6 +12,7 @@
         <module>bloom-filter</module>
         <module>mybatis-generator</module>
         <module>jwt-demo</module>
+        <module>security-demo</module>
     </modules>
 
 
@@ -34,6 +35,17 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.60</version>
         </dependency>
     </dependencies>
 
