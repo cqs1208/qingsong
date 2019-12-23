@@ -1,0 +1,16 @@
+server.port: 8704
+
+jasypt:
+  encryptor:
+    password: e!Jd&ljyJ^e4I5oU
+
+
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://120.27.71.186:3306/db_test?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: ENC(t36fW5aY1lwA1RofQoRfsboyvp1+a/GR)
+    driverClassName: com.mysql.jdbc.Driver

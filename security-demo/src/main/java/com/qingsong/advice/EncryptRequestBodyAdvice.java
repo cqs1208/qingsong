@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.MethodParameter;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpInputMessage;
 import org.springframework.http.converter.HttpMessageConverter;
@@ -26,6 +27,7 @@ import java.lang.reflect.Type;
  * @author : chenqingsong
  * @date : 2019-12-21 14:35
  */
+@Order(value = 8)
 @ControllerAdvice(basePackages = "com.qingsong.controller")
 public class EncryptRequestBodyAdvice implements RequestBodyAdvice {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -40,6 +42,7 @@ public class EncryptRequestBodyAdvice implements RequestBodyAdvice {
 
     @Override
     public HttpInputMessage beforeBodyRead(HttpInputMessage inputMessage, MethodParameter methodParameter, Type type, Class<? extends HttpMessageConverter<?>> aClass) throws IOException {
+        System.out.println("处理器排序： " +  8);
         try {
             boolean encode = false;
             if (methodParameter.getMethod().isAnnotationPresent(RsaSecurityParameter.class)) {

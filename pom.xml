@@ -13,6 +13,7 @@
         <module>mybatis-generator</module>
         <module>jwt-demo</module>
         <module>security-demo</module>
+        <module>jasypt-demo</module>
     </modules>
 
 

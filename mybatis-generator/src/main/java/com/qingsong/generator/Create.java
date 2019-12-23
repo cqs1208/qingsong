@@ -10,12 +10,12 @@ public class Create {
 	public void test(){
 
 		// 数据库连接信息
-		String url = "jdbc:mysql://47.96.118.93:3306/mybatis?useUnicode=true&characterEncoding=utf8";
+		String url = "jdbc:mysql://120.27.71.186:3306/db_test?useUnicode=true&characterEncoding=utf8";
 		String MysqlUser = "root";
 		String mysqlPassword = "chen1208";
 		// 数据库及数据表名称
-		String database = "mybatis";
-		String table = "user";
+		String database = "db_test";
+		String table = "user_info";
 
 //		String url = "jdbc:mysql://raycloudtest.mysql.rds.aliyuncs.com:3306/ding_cw_1?useUnicode=true&amp;characterEncoding=UTF-8&amp;allowMultiQueries=true";
 //		String MysqlUser = "youcheng";
